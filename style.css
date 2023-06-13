@@ -1,0 +1,157 @@
+@font-face {
+  font-family: MiFuentePersonal;
+  src: url("./fonts/Nightmare\ Before\ Christmas.ttf") format("opentype");
+}
+
+#bannerInicial {
+  background-image: url(./Images/black-hole-animated.webp);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tittle {
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+  font-family: MiFuentePersonal, Helvetica, sans-serif;
+
+}
+
+#tittle-timburton {
+  font-size: 200px;
+}
+
+#logo {
+  background-image: url(./Images/favicon.png);
+  object-fit: scale-down;
+}
+
+.navbar {
+  font-family: MiFuentePersonal, Helvetica, sans-serif;
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.video-fondo {
+  border: 2px solid #000;
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* css html contacto */
+
+#bannerContacto {
+  background-image: url(./Images/contacto.npg.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contacto {
+  font-family: MiFuentePersonal, Helvetica, sans-serif;
+  color: rgb(255, 245, 245);
+  font-size: 100px;
+  text-shadow: 1px 1px 8px rgba(158, 155, 155, 0.747);
+}
+
+.formulario {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form label {
+  font-family: MiFuentePersonal, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+form input[type="submit"] {
+  width: 150px;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #3a3939;
+}
+
+form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+textarea {
+  width: 500px;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+}
+
+.letra-blanca {
+  color: rgb(224, 223, 223);
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.lblFormulario
+{
+ color: #ffffffb6;
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  textarea {
+    width: 300px;
+  }
+
+  #tittle-timburton {
+    font-size: 100px;
+  }
+}
